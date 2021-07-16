@@ -8,6 +8,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
+import ch.zli.m223.ksh18a.niclug.crm1.repository.BookRepository;
 import ch.zli.m223.ksh18a.niclug.crm1.repository.UserRepository;
 import ch.zli.m223.ksh18a.niclug.crm1.role.AppRoles;
 
@@ -16,6 +17,9 @@ public class Initializer implements ApplicationRunner {
 
 	@Autowired
 	UserRepository userRepository;
+
+	@Autowired
+	BookRepository bookRepository;
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {

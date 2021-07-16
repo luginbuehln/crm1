@@ -24,7 +24,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().and().cors().disable().authorizeRequests().antMatchers("/rest/v1/users/**").permitAll().anyRequest()
 				.authenticated().and().httpBasic().and().sessionManagement()
-				.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+				.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and().formLogin().loginPage("/login")
+				.defaultSuccessUrl("/bookshelf").permitAll();
 	}
 
 	@Override

@@ -10,31 +10,31 @@ import ch.zli.m223.ksh18a.niclug.crm1.model.Book;
 public class BookServiceImpl implements BookService {
 
 	@Override
-	public List<Book> getAllBook() {
+	public List<Book> getAllBooks() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Book addUser(String userName) {
+	public Book addBook(String bookName) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Book findByUserName(String userName) {
+	public Book findByBookName(String bookName) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Book getUserById(long userId) {
+	public Book getBookById(long bookId) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void deleteUserById(long userId) {
+	public void deleteBookById(long bookId) {
 		// TODO Auto-generated method stub
 
 	}

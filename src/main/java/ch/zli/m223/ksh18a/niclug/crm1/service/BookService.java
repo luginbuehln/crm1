@@ -5,14 +5,14 @@ import java.util.List;
 import ch.zli.m223.ksh18a.niclug.crm1.model.Book;
 
 public interface BookService {
+	List<Book> getAllBooks();
 
-	List<Book> getAllBook();
+	Book addBook(String bookName);
 
-	Book addUser(String userName);
+	Book findByBookName(String bookName);
 
-	Book findByUserName(String userName);
+	Book getBookById(long bookId);
 
-	Book getUserById(long userId);
+	void deleteBookById(long bookId);
 
-	void deleteUserById(long userId);
 }

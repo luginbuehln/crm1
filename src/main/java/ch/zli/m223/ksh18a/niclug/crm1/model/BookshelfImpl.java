@@ -28,6 +28,11 @@ public class BookshelfImpl implements Bookshelf {
 		return new ArrayList<Book>(books);
 	}
 
+	/*
+	 * public BookshelfImpl setBoooks(List<String> books) { this.books = new
+	 * List<String>(books); return this; }
+	 */
+
 	@Override
 	public Long getID() {
 		// TODO Auto-generated method stub
