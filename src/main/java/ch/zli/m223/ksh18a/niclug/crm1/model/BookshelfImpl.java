@@ -20,7 +20,7 @@ public class BookshelfImpl implements Bookshelf {
 	private String bookShelfName;
 
 	@OneToMany(mappedBy = "bookshelf", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	public List<Book> books;
+	public List<BookImpl> books;
 
 	@Override
 	public List<Book> getBooks() {

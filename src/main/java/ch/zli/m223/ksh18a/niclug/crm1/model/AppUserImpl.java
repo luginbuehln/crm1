@@ -31,7 +31,7 @@ public class AppUserImpl implements AppUser {
 	private String passwordHash;
 
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	public List<Book> books;
+	public List<BookImpl> books;
 
 	@ElementCollection(fetch = FetchType.EAGER)
 	private Set<String> roles;
@@ -105,7 +105,7 @@ public class AppUserImpl implements AppUser {
 	@Override
 	public List<Book> getBooks() {
 		// TODO Auto-generated method stub
-		return books;
+		return null;
 	}
 
 }

@@ -15,10 +15,10 @@ public class BookImpl implements Book {
 	private String bookName;
 
 	@ManyToOne
-	public Bookshelf bookshelf;
+	public BookshelfImpl bookshelf;
 
 	@ManyToOne
-	public AppUser user;
+	public AppUserImpl user;
 
 	public BookImpl(String bookName) {
 		this.bookName = bookName;
